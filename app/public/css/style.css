@@ -1,0 +1,16 @@
+.container {
+    width: 65%;
+    background: gray;
+    padding: 30px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 24px #000000;
+    -moz-box-shadow: 0px 0px 24px #000000;
+    box-shadow: 0px 0px 24px #000000;
+    background-color: #DDDDDD;
+}
+
+#submitButton {
+    width: 300px;
+}
