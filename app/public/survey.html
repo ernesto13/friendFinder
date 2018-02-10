@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
@@ -172,7 +172,7 @@
 
 
         <!--Modal-->
-        <div id="modalDisplay" class="modal" tabindex="-1" role="dialog">
+        <div id="modalDisplay" class="modal fade" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -214,7 +214,7 @@
                 event.preventDefault();
 
 
-                // Form validation
+                // check to see if for is valid
                 function validateForm() {
                     var isValid = true;
                     $(".form-control").each(function() {
@@ -261,11 +261,11 @@
                         $("#imageMatch").attr("src", data.photo);
 
                         // Show the modal with the best match
-                        $("#results-modal").modal("toggle");
+                        $("#modalDisplay").modal("toggle");
 
                     });
                 } else {
-                    alert("Please fill out all fields before submitting!");
+                    alert("Please fill out all fields!");
                 }
             });
 
